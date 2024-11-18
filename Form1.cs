@@ -40,48 +40,8 @@ namespace GerenciadordeTarefas
             {
                 MessageBox.Show("Por favor, Insira uma tarefa.");
             }
-                                       
-
-            /*
-            if (semUrgencia_btn.Checked)
-            {
-
-                if (!string.IsNullOrWhiteSpace(TarefaAdicionar.Text))
-                {
-                    LBListaAgSu.Items.Add("- " + TarefaAdicionar.Text);
-                    TarefaAdicionar.Clear();
-                }
-                else
-                {
-                    MessageBox.Show("Por Favor, Insira uma tarefa.");
-                }
-            }
-            else if (importante_btn.Checked)
-            {
-                if (!string.IsNullOrWhiteSpace(TarefaAdicionar.Text))
-                {
-                    LBListaAgImp.Items.Add("- " + TarefaAdicionar.Text);
-                    TarefaAdicionar.Clear();
-                }
-                else
-                {
-                    MessageBox.Show("Por Favor, Insira uma tarefa.");
-                }
-            }
-            else if (muitoImportante_btn.Checked)
-            {
-                if (!string.IsNullOrWhiteSpace(TarefaAdicionar.Text))
-                {
-                    LBListaAgMImp.Items.Add("- " + TarefaAdicionar.Text);
-                    TarefaAdicionar.Clear();
-                }
-                else
-                {
-                    MessageBox.Show("Por Favor, Insira uma tarefa.");
-                }
-            }
-            */
-                
+                                    
+                           
         
         }
         private void Main_frm_Load(object sender, EventArgs e)
@@ -120,37 +80,7 @@ namespace GerenciadordeTarefas
             {
                 MessageBox.Show("Selecione uma tarefa para remover.");
             }
-            
-            /*
-             if (LBListaAgSu.SelectedItem != null)
-             {
-
-                 LBListaAgSu.Items.Remove(LBListaAgSu.SelectedItem);
-
-             }
-             else
-             {
-                 if (LBListaAnSu.SelectedItem != null)
-                 {
-
-                     LBListaAnSu.Items.Remove(LBListaAnSu.SelectedItem);
-
-                 }
-                 else
-                 {
-                     if (LBListaFinSu.SelectedItem != null)
-                     {
-
-                         LBListaFinSu.Items.Remove(LBListaFinSu.SelectedItem);
-
-                     }
-                     else
-                     {
-                         MessageBox.Show("Selecione uma tarefa para remover.");
-                     }
-                 }
-             }
-            */
+                        
         }    
 
         private void MoverDir1_Click(object sender, EventArgs e) //botao para mover tarefas de aguardando >> andamento
@@ -173,26 +103,7 @@ namespace GerenciadordeTarefas
                     break;
                 }
             }
-            /*
-            //Move tarefas sem urgencia
-            if (LBListaAgSu.SelectedItem != null)
-            {
-                LBListaAnSu.Items.Add(LBListaAgSu.SelectedItem);
-                LBListaAgSu.Items.Remove(LBListaAgSu.SelectedItem);
-            }
-            //move tarefas importantes
-            if (LBListaAgImp.SelectedItem != null)
-            {
-                LBListaAnImp.Items.Add(LBListaAgImp.SelectedItem);
-                LBListaAgImp.Items.Remove(LBListaAgImp.SelectedItem);
-            }
-            //move tarefas muito importantes
-            if (LBListaAgMImp.SelectedItem != null)
-            {
-                LBListaAnMImp.Items.Add(LBListaAgMImp.SelectedItem);
-                LBListaAgMImp.Items.Remove(LBListaAgMImp.SelectedItem);
-            }
-            */
+            
 
         }
 
@@ -216,26 +127,7 @@ namespace GerenciadordeTarefas
                     break;
                 }
             }
-            /*
-            //move tarefas sem urgencia
-            if (LBListaAnSu.SelectedItem != null)
-            {
-                LBListaFinSu.Items.Add(LBListaAnSu.SelectedItem);
-                LBListaAnSu.Items.Remove(LBListaAnSu.SelectedItem);
-            }
-            //move tarefas importantes
-            if (LBListaAnImp.SelectedItem != null)
-            {
-                LBListaFinImp.Items.Add(LBListaAnImp.SelectedItem);
-                LBListaAnImp.Items.Remove(LBListaAnImp.SelectedItem);
-            }
-            //move tarefas muito importantes
-            if (LBListaAnMImp.SelectedItem != null)
-            {
-                LBListaFinMImp.Items.Add(LBListaAnMImp.SelectedItem);
-                LBListaAnMImp.Items.Remove(LBListaAnMImp.SelectedItem);
-            }
-            */
+            
         }
 
         private void MoverEsq2_Click(object sender, EventArgs e) //botao para mover tarefas de finalizado >> andamento
@@ -258,26 +150,7 @@ namespace GerenciadordeTarefas
                     break;
                 }
             }
-            /*
-            //move tarefas sem urgencia
-            if (LBListaFinSu.SelectedItem != null)
-            {
-                LBListaAnSu.Items.Add(LBListaFinSu.SelectedItem);
-                LBListaFinSu.Items.Remove(LBListaFinSu.SelectedItem);
-            }
-            //move tarefas importantes
-            if (LBListaFinImp.SelectedItem != null)
-            {
-                LBListaAnImp.Items.Add(LBListaFinImp.SelectedItem);
-                LBListaFinImp.Items.Remove(LBListaFinImp.SelectedItem);
-            }
-            //move tarefas muito importantes
-            if (LBListaFinMImp.SelectedItem != null)
-            {
-                LBListaAnMImp.Items.Add(LBListaFinMImp.SelectedItem);
-                LBListaFinMImp.Items.Remove(LBListaFinMImp.SelectedItem);
-            }
-            */
+            
         }
 
         private void MoverEsq1_Click(object sender, EventArgs e) //botao para mover tarefas de andamento >> aguardando
@@ -300,26 +173,7 @@ namespace GerenciadordeTarefas
                     break;
                 }
             }
-            /*
-            //move tarefas sem urgencia
-            if (LBListaAnSu.SelectedItem != null)
-            {
-                LBListaAgSu.Items.Add(LBListaAnSu.SelectedItem);
-                LBListaAnSu.Items.Remove(LBListaAnSu.SelectedItem);
-            }
-            //move tarefas importantes
-            if (LBListaAnImp.SelectedItem != null)
-            {
-                LBListaAgImp.Items.Add(LBListaAnImp.SelectedItem);
-                LBListaAnImp.Items.Remove(LBListaAnImp.SelectedItem);
-            }
-            //move tarefas muito importantes
-            if (LBListaAnMImp.SelectedItem != null)
-            {
-                LBListaAgMImp.Items.Add(LBListaAnMImp.SelectedItem);
-                LBListaAnMImp.Items.Remove(LBListaAnMImp.SelectedItem);
-            }
-            */
+            
         }
 
         private void ListaAn_listbox_SelectedIndexChanged(object sender, EventArgs e)
